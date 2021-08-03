@@ -56,13 +56,13 @@ def save_file(file_directory):
 
 # browse buttons
 browse_text = tk.StringVar()
-browse_btn = tk.Button(root, textvariable=browse_text, command=lambda:open_file(), font="Raleway, 16 bold", bg="#90a4ae", fg="red", height=1, width=10)
+browse_btn = tk.Button(root, textvariable=browse_text, command=lambda:open_file(), font="Raleway, 16", bg="#f0f0ed", fg="black", height=1, width=10)
 browse_text.set("Browse")
 browse_btn.grid(column=1, row=2)
 
 # save button
 save_text = tk.StringVar()
-save_btn = tk.Button(root, textvariable=save_text, command=lambda:select_directory(), font="Raleway 16 bold", bg="#90a4ae", fg="red", height=1, width=10, pady=4)
+save_btn = tk.Button(root, textvariable=save_text, command=lambda:select_directory(), font="Raleway 16", bg="#f0f0ed", fg="black", height=1, width=10, pady=4)
 save_text.set("Save")
 save_btn.grid(column=1, row=4)
 
